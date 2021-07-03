@@ -21,8 +21,8 @@ void fillArray2(uint8_t **ret)
 {
     printf("fillArray2\n");
 
-    uint8_t* value = (uint8_t*) 0x0004;
-    printf("%s", value);
+    // uint8_t* value = (uint8_t*) 0x0004;
+    // printf("%s", value);
 
     uint8_t e1[] = {1, 2};
     uint8_t e2[] = {3, 4};

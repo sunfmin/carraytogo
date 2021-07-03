@@ -7,7 +7,7 @@ package main
 import "C"
 import (
 	"fmt"
-	// "unsafe"
+	"unsafe"
 )
 
 func main() {
@@ -24,5 +24,6 @@ func main() {
 	var ret2 = make([]*C.uint8_t, 10)
 	C.fillArray2(&ret2[0])
 	fmt.Println("fillArray2", ret2)
+	fmt.Println("fillArray2", C.GoBytes(unsafe.Pointer(ret2[0]), 3))
 
 }
